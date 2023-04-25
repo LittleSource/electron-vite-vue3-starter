@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-
-console.log("[App.vue]", `Hello world from Electron ${process.versions.electron}!`)
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <div>
+  <div class="flex-center">
     <a href="https://www.electronjs.org/" target="_blank">
       <img src="./assets/electron.svg" class="logo electron" alt="Electron logo" />
     </a>
@@ -17,10 +15,6 @@ console.log("[App.vue]", `Hello world from Electron ${process.versions.electron}
     </a>
   </div>
   <HelloWorld msg="Electron + Vite + Vue" />
-  <div class="flex-center">
-    Place static files into the <code>/public</code> folder
-    <img style="width: 2.4em; margin-left: .4em;" src="/logo.svg" alt="Logo">
-  </div>
 </template>
 
 <style>
